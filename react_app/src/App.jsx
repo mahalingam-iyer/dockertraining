@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState('loading')
   useEffect(() => {
     async function fetchData(){
-      await fetch('http://13.232.231.224:3000/')
+      await fetch('http://3.108.190.95:3000/')
       .then((response) => response.json())
       .then((data) => setCount(data))
     }
