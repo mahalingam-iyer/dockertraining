@@ -1,6 +1,7 @@
 'use strict';
  
 const express = require('express');
+const cors = require('cors');
  
 // Constants
 const PORT = 3000;
