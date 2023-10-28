@@ -7,7 +7,7 @@ function App() {
     fetch('http://3.108.190.95:3000/')
       .then((response) => {
         console.log('got response now converting')
-        response.json()
+        response.text()
       })
       .then((data) => {
         console.log('got json data')
