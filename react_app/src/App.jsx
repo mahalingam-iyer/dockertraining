@@ -5,8 +5,15 @@ function App() {
   const [count, setCount] = useState('loading')
   useEffect(() => {
     fetch('http://3.108.190.95:3000/')
-      .then((response) => response.json())
-      .then((data) => setCount(data))
+      .then((response) => {
+        console.log('got response now converting')
+        response.json()
+      })
+      .then((data) => {
+        console.log('got json data')
+        console.log(data);
+        setCount(data);
+      })
     console.log(import.meta.env.VITE_API_URL);
   }, []);
   return (
